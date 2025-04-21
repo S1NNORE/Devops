@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: python-algorithms-app
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt || true"
+    startCommand: "./start.sh"
